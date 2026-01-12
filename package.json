@@ -1,0 +1,31 @@
+{
+  "name": "video-streaming-backend",
+  "version": "1.0.0",
+  "description": "Stateless video streaming backend with chunk-based delivery",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "segment": "node scripts/segmentVideo.js",
+    "test": "jest --coverage",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "compression": "^1.7.4",
+    "express-rate-limit": "^7.1.5",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0",
+    "dotenv": "^16.3.1",
+    "mime-types": "^2.1.35"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.55.0"
+  }
+}
